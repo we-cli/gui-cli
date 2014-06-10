@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GUI for CLI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="panel">
+  <form>
+    <fieldset>
+      <legend>cwd</legend>
+      <input type="text" id="ipt-dir">
+      <input type="button" id="ok-dir" value="enter">
+    </fieldset>
+
+    <fieldset>
+      <legend>cmd</legend>
+      <input type="text" id="ipt-cmd">
+      <input type="button" id="ok-cmd" value="exec!">
+    </fieldset>
+
+    <fieldset>
+      <legend>output</legend>
+      <div>
+        <small id="info-stderr"></small>
+      </div>
+      <div>
+        <small id="info-stdout"></small>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<script src="js/zepto-1.1.3.min.js"></script>
+<script>
+  global.window = window
+  require('./js/main')
+</script>
+</body>
+</html>

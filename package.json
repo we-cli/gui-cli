@@ -1,0 +1,18 @@
+{
+  "name": "gui-cli",
+  "description": "GUI for CLI",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 400,
+    "height": 400
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fritx/gui-cli.git"
+  },
+  "dependencies": {
+    "iconv-lite": "~0.2.11"
+  }
+}

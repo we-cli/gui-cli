@@ -1,0 +1,10 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#info-stderr {
+  color: red;
+}
+#info-stdout {
+  color: green;
+}
