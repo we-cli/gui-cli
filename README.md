@@ -4,7 +4,7 @@
 
 (Highly under development)
 
-<img src="https://raw.githubusercontent.com/fritx/gui-cli/master/screenshot.png" width="300">
+<img src="https://raw.githubusercontent.com/fritx/gui-cli/master/screenshot.png" width="480">
 
 ## Features
 

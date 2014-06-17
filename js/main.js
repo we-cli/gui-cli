@@ -13,38 +13,38 @@ var $infoOut = $('#info-stdout')
 var $infoErr = $('#info-stderr')
 
 $okDir.on('click', function(){
-	enterDir($iptDir.val())
+  enterDir($iptDir.val())
 })
 $okCmd.on('click', function(){
-	execCmd($iptCmd.val())
+  execCmd($iptCmd.val())
 })
 
 function enterDir(path) {
-	if (!isDir(path)) return console.log('not a directory')
-	process.chdir(path)
-	$infoOut.text('switched to: ' + process.cwd())
+  if (!isDir(path)) return console.log('not a directory')
+  process.chdir(path)
+  $infoOut.text('switched to: ' + process.cwd())
 }
 
 function execCmd(cmd) {
-	exec(cmd, { encoding: null }, showOutput)
+  exec(cmd, { encoding: null }, showOutput)
 }
 
 function showOutput(err, stdout, stderr) {
-	$infoErr.empty()
-	$infoOut.empty()
-	if (err) {
-		$infoErr.html(toHtml(err.stack))
-	}
-	if (stderr) {
-		stderr = toUtf8(stderr)
-		$infoErr.html(toHtml(stderr))
-	}
-	if (stdout) {
-		stdout = toUtf8(stdout)
-		$infoOut.html(toHtml(stdout))
-	}
+  $infoErr.empty()
+  $infoOut.empty()
+  if (err) {
+    return $infoErr.html(toHtml(err.stack))
+  }
+  if (stderr) {
+    stderr = toUtf8(stderr)
+    $infoErr.html(toHtml(stderr))
+  }
+  if (stdout) {
+    stdout = toUtf8(stdout)
+    $infoOut.html(toHtml(stdout))
+  }
 }
 
 function isDir(path) {
-	return fs.statSync(path).isDirectory()
+  return fs.statSync(path).isDirectory()
 }
