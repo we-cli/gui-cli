@@ -2,9 +2,15 @@ body {
   background-color: #f3f3f3;
 }
 
-#info-stderr {
+.msg-sys {
+  color: gray;
+}
+.msg-err {
   color: red;
 }
-#info-stdout {
+.msg-stderr {
+  color: orange;
+}
+.msg-stdout {
   color: green;
 }

@@ -1,12 +1,14 @@
 {
   "name": "gui-cli",
   "description": "GUI for CLI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.html",
   "window": {
-    "toolbar": true,
-    "width": 400,
-    "height": 400
+    "toolbar": false,
+    "min_width": 440,
+    "min_height": 440,
+    "width": 440,
+    "height": 440
   },
   "repository": {
     "type": "git",

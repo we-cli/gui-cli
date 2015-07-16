@@ -8,26 +8,27 @@
 </head>
 <body>
 <div class="panel">
-  <form>
+  <form id="frm-dir">
     <fieldset>
       <legend>cwd</legend>
       <input type="text" id="ipt-dir">
-      <input type="button" id="ok-dir" value="enter">
+      <input type="submit" value="enter">
     </fieldset>
+  </form>
 
+  <form id="frm-cmd">
     <fieldset>
       <legend>cmd</legend>
       <input type="text" id="ipt-cmd">
-      <input type="button" id="ok-cmd" value="exec!">
+      <input type="submit" value="exec!">
     </fieldset>
+  </form>
 
+  <form>
     <fieldset>
       <legend>output</legend>
       <div>
-        <small id="info-stderr"></small>
-      </div>
-      <div>
-        <small id="info-stdout"></small>
+        <small id="info-out"></small>
       </div>
     </fieldset>
   </form>
